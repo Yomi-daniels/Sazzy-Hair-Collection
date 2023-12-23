@@ -30,3 +30,26 @@ function openAccord(){
 
 accordionBtn2.addEventListener('click', openAccord);
 
+// ARM BURGER MENU NAV
+
+let serviceList = document.querySelector('.services');
+let subMenu = document.querySelector('.sub-menu-1');
+
+
+function revealMenu(){
+    if(subMenu.classList.contains('services')){
+        subMenu.classList.remove('services')
+    } else{
+        subMenu.classList.add('services')
+    }
+    
+
+}
+
+document.body.addEventListener('click', function(event){
+if(event.target !== serviceList && !serviceList.contains(event.target)){
+    subMenu.classList.remove('services')
+}
+
+})
+serviceList.addEventListener('click', revealMenu);

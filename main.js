@@ -1,7 +1,8 @@
+
 // ARM BURGER MENU NAV
 
-const serviceList = document.querySelector('.services');
-const subMenu = document.querySelector('.sub-menu-1');
+let serviceList = document.querySelector('.services');
+let subMenu = document.querySelector('.sub-menu-1');
 
 
 function revealMenu(){
@@ -21,6 +22,38 @@ if(event.target !== serviceList && !serviceList.contains(event.target)){
 
 })
 serviceList.addEventListener('click', revealMenu);
+
+// INDEX CART ACCORDION COLOR AND SIZE
+
+const dropDown = document.querySelector('#color-down-icon');
+const moreColor = document.querySelector('.more-color');
+
+
+function openMoreColor(){
+    
+    if(moreColor.classList.contains('more-color')){
+        moreColor.classList.remove('more-color');
+        moreColor.style.display = "none"
+    }else{
+         moreColor.classList.add('more-color');
+         moreColor.style.display = "block"
+    };
+};
+dropDown.addEventListener('click', openMoreColor);
+
+
+
+const dropDown2 = document.querySelector('#size-down-icon');
+const moreSize = document.querySelector('.more-size');
+
+function openMoreSize(){
+    if(moreSize.classList.contains('more-size')){
+        moreSize.classList.remove('more-size');
+    }else{
+         moreSize.classList.add('more-size');
+    };
+};
+dropDown2.addEventListener('click', openMoreSize);
 
 
 // FADING ANIMATION
@@ -72,30 +105,7 @@ servicesBtn.onclick = () => {
 
 };
 
-const dropDown = document.querySelector('#color-down-icon');
-const moreColor = document.querySelector('.more-color');
 
-function openMoreColor(){
-    if(moreColor.classList.contains('more-color')){
-        moreColor.classList.remove('more-color')
-    }else{
-         moreColor.classList.add('more-color')
-    };
-};
-dropDown.addEventListener('click', openMoreColor);
-
-
-const dropDown2 = document.querySelector('#size-down-icon');
-const moreSize = document.querySelector('.more-size');
-
-function openMoreSize(){
-    if(moreSize.classList.contains('more-size')){
-        moreSize.classList.remove('more-size');
-    }else{
-         moreSize.classList.add('more-size');
-    };
-};
-dropDown2.addEventListener('click', openMoreSize);
 
 
 const galleryContainer = [...document.querySelectorAll('.gallery-container')];
@@ -125,6 +135,7 @@ galleryContainer.forEach((item, i) => {
 // })
 
 
+// NAV BAR ON MEDIA SCREEN 
 
 const checkBox1 = document.querySelector('.hamburger');
 const menuList = document.querySelector('.menu-list');

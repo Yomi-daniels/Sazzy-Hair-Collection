@@ -24,10 +24,10 @@
                     <li class="services"><a href="#" class="service-link">services</a><i class="fa-solid fa-chevron-down down-btn">
                         <div class="sub-menu-1">
                      <ul class="drop-down-lists">
-                         <li><a href="Wig-Sales.html">Wig sales/Installation<i class="fa-solid fa-chevron-right"></i></a></li>
+                         <li><a href="Wig-Collection.html">Wig sales/Installation<i class="fa-solid fa-chevron-right"></i></a></li>
                          <li><a href="Make-Up-Services.html">Make up Services<i class="fa-solid fa-chevron-right"></i></a></li>
                          <li><a href="Nail-Services.html">Nail Services<i class="fa-solid fa-chevron-right"></i></a></li>
-                         <li><a href="Manicure-Pedicure.html">Manicure and pedicure<i class="fa-solid fa-chevron-right"></i></a></li>
+                         <li><a href="Manicure-Pedicure.html" class="active">Manicure and pedicure<i class="fa-solid fa-chevron-right"></i></a></li>
                      </ul>
                  </div>
                  </i>   
@@ -211,8 +211,8 @@
     </section>
 </body>
 <script>
-    const serviceList = document.querySelector('.services');
-const subMenu = document.querySelector('.sub-menu-1');
+    let serviceList = document.querySelector('.services');
+    let subMenu = document.querySelector('.sub-menu-1');
 
 
 function revealMenu(){

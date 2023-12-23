@@ -2170,12 +2170,13 @@ border: 0;
     width: 100%;
 }
 
-.more-color li,
-.more-size li{
+.color-container-child .more-color li,
+.size-container-child .more-size li{
     border-bottom: 2px solid black;
 padding-bottom: .5rem;
 padding-top: .5rem;
 }
+
 .more-color li:first-child,
 .more-size li:first-child{
     padding-top:.5rem;
