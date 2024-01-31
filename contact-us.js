@@ -14,9 +14,10 @@ function sendMessage(){
         senderNumber: document.querySelector("#number").value,
         message: document.querySelector("#text-area").value
     };
+    
     emailjs.send(serviceID, templateID, params) 
  .then(res =>{
-    alert('thank you,' + params["senderName"] + '! your message has been sent.');
+    alert('thank you, ' + params["senderName"] + '! your message has been sent.');
  })
 };const faders = document.querySelectorAll('.fade-in');
 const appearOptions = {

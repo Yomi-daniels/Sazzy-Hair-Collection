@@ -4218,14 +4218,43 @@ flex-shrink: 0;
 
 /* BLONDE FRONTAL PAGE SECTION */
 
+.blonde_header{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.cart-flex-container-content{
+    margin-top: 2rem;
+}
 .blonde_frontal_container{
-    /* border: 2px solid black; */
+    position: relative;
+    margin-inline: auto;
     width: 1330px;
     height: 100%;
-    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     /* border: 2px solid black; */
+    
+}
+
+.cart-flex-container{
+    /* margin-left: 5rem; */
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    gap: 1.5em;
+    /* margin-right: 1em; */
+    /* border: 2px solid black; */
+      /* margin-inline: auto; */
+}
+
+.blonde-frontal-container-child{
+    margin-inline: auto;
     display: flex;
     gap: 2em;
+    height: 100%;
+    
 }
 
 
@@ -4421,6 +4450,7 @@ margin-bottom: 1rem;
 }
 
 .first_accordion{
+    width: 700px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -4470,8 +4500,332 @@ transition: all 0.3s ease-in;
     transition: transform 0.3s ease-in-out;
 }
 
+.blonde_frontal_container .blonde-btn{
+    padding: 10px;
+    border-radius: 8px;
+    background: var(--Primary-color---GB, #6C4B03);
+    color: #fff;
+    border: none;
+    margin-top: 2rem;
+    font-family: satoshi light;
+}
+
+.blonde_frontal_container .blonde-btn:hover{
+    cursor: pointer;
+}
 
 
+/*  */
+
+/* YOUR CART PAGE */
+
+.cart_page_container{
+    position: relative;
+    margin-inline: auto;
+    width: 1330px;
+    height: 100%;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+.cart_page_header{
+    font-size: 2rem;
+}
+
+.carts-content{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.484);
+    padding-bottom: 2rem;
+    
+}
+
+
+.scroll-container{
+    overflow: auto;
+    height: 600px;
+}
+
+.scroll-container::-webkit-scrollbar{
+    width: 12px;
+
+}
+
+.scroll-container::-webkit-scrollbar-thumb{
+        background-color: #533c18;
+        border-radius: 6px;
+        scrollbar-width: thin;
+    }
+
+    .cart-price-container{
+        padding-right: .2rem;
+    }
+
+.prod_quan_total{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.484);
+    padding-bottom: 2rem;
+}
+
+.cart-image-detail{
+    display: flex;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+.cart-details-child{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+
+ 
+}
+
+.cart-image-text{
+    display: grid;
+    grid-gap: .5em;
+}
+
+.cart-image-text p{
+    font-family:  Satoshi Variable;
+
+}
+
+.quantity-container{
+    border: 1px solid black;
+}
+
+.cart-price-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.cart-price-container p{
+    font-family:  Satoshi Variable;
+    text-decoration: underline;
+}
+
+.cart-price-container p:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.total-cart-content{
+/* border: 2px solid black; */
+margin-top: 1.6rem;
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+gap: 1em;
+}
+
+.total-cart-content p{
+    font-family: satoshi Variable;
+    font-size: 1rem;
+}
+
+.total-cart-content span{
+    font-family: satoshi bold;
+    font-size: 1.5rem;
+}
+
+.total-cart-content .shipping_span{
+    text-decoration: underline;
+    font-family: satoshi Variable;
+    font-size: 1rem;
+}
+
+.cart-total-btn{
+    display: flex;
+    gap: .5em;
+}
+
+.cart-total-btn button:hover{
+    cursor: pointer;
+}
+
+.cart_btn{
+    border-radius: 8px;
+    background: var(--Primary-color---GB, #6C4B03);
+    width: 188px;
+    height: 50px;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    font-family: satoshi Variable;
+}
+
+.cart_btn2{
+    border-radius: 8px;
+    background: transparent;
+    width: 188px;
+    height: 50px;
+    padding: 10px;
+    color: #000000;
+    border:1px solid var(--Primary-color---GB, #6C4B03);
+    font-family: satoshi Variable;
+    transition: all 0.3s ease-in;
+}
+
+.cart_btn2:hover{
+    background-color: #2F4858;
+    color: #fff;
+}
+
+.cart-viewall-btn{
+    padding: 10px;
+    border-radius: 8px;
+    background: var(--Primary-color---GB, #6C4B03);
+    color: #fff;
+    border: none;
+    margin-top: 2rem;
+    font-family: satoshi light;
+}
+
+.cart-viewall-btn:hover{
+    cursor: pointer;
+}
+
+.cart-parent-container-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/*  */
+
+
+
+/* INFORMATION SECTIoN PAGE */
+
+.information-section{
+    position: relative;
+    margin-inline: auto;
+    width: 1330px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid black; */
+    
+}
+
+.all-container-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .3em;
+}
+
+.info-stages-container{
+    display: flex;
+    align-items: last baseline;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.rounder{
+    font-size: 1.2rem;
+    border-radius: 36px;
+    background: var(--Primary-color---GB, #6C4B03);
+    display: flex;
+width: 40px;
+height: 40px;
+padding: 10px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10px;
+color: #fff;
+font-family: satoshi bold;
+}
+
+.info-line{
+width: 240px;
+height: 4px;
+background-color: var(--Primary-color---GB, #6C4B03);
+}
+
+.info-line-3{
+    width: 240px;
+height: 4px;
+background-color: grey;
+}
+
+
+.Shipping-container .rounder{
+    background-color: transparent;
+    border: 1px solid var(--Primary-color---GB, #6C4B03);
+    color: black;
+    font-family: satoshi light;
+}
+
+.Shipping-container h3{
+    font-family: satoshi light;
+}
+.Payment-container .rounder{
+    background-color: transparent;
+    border: 1px solid var(--Primary-color---GB, #6C4B03);
+    color: black;
+    font-family: satoshi light;
+}
+
+.Payment-container h3{
+    font-family: satoshi light;
+    
+}
+
+
+.info-contact-container{
+    position: relative;
+    width: 506px;
+    height: 100%;
+
+/* border: 2px solid black; */
+}
+
+.contact-text .contact-text-header{
+    font-size: 1.7rem;
+}
+
+.contact-text a{
+    color: var(--Primary-color---GB, #6C4B03);
+font-family: "Satoshi Variable";
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 130%; /* 20.8px */
+text-decoration-line: underline;
+}
+
+.contact-text p{
+
+font-family: Satoshi Variable;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+
+}
+
+.contact-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+   
+}
+
+.info-contact-container input{
+    width: 100%;
+    height: 55px;
+    padding: 20px;  
+    border-radius: 8px;
+    border: 0.5px solid var(--Black, #212121);
+}
 
 
 /*  */

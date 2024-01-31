@@ -1,5 +1,4 @@
 
-
       /*BLONDE ACCORDION CONTAINER*/
 
        // Add event listener to all accordion buttons
