@@ -102,7 +102,7 @@
                 </p>
                 
                 <div class="hero-btn">
-                    <a href="Wig-Collection.html">Browse Our Collection</a>
+                    <a href="Silky Straight Wigs.html">Browse Our Collection</a>
                 </div>
             </div>
 
@@ -258,6 +258,9 @@
                 <div class="price-container">
                     <p>Silky Straight <br> Wigs</p>
                     <p>Select</p>
+                    <div class="price-container-hidden">
+                        <p></p>
+                    </div>
                 </div>
             </div>
             <div class="wig-collections-card-container fade-in">
@@ -406,7 +409,7 @@
                         <div class="size-container">
                             <div class="size-container-child">
                                 <div class="main-size">
-                                    <li>Size</li>
+                                    <li>11"</li>
                                     <i class="fa-solid fa-chevron-down" id="size-down-icon"></i>
                                 </div>
                                 <div class="more-size">
@@ -421,20 +424,22 @@
                     <div class="product-quantity">
                         <p>Quantity</p>
                         <div class="quantity-container">
-                            <i class="fa-sharp fa-solid fa-plus"></i>
-                            <p>1</p>
-                            <i class="fa-sharp fa-solid fa-minus"></i>
+                            <div class="icon" onclick="add()"><i class="fa-sharp fa-solid fa-plus"></i></div>
+                            <p id="result">0</p>
+                            <div class="icon"  onclick="subtract()"><i class="fa-sharp fa-solid fa-minus"></i></div>
                         </div>
                     </div>
                     <div class="section-4-btn-flex">
-                        <button class="btn">
+                        <button class="btn" id="showCartBtn" onclick="showCartPopup()">
                             <span class="transition"></span>
                             <span class="gradient"></span>
                             <span class="label">Add to Cart</span>
                         </button>
-                        <button class="purchase-btn">
-                            Purchase now
-                        </button>
+                        <a href="blonde-frontal-wig.html">
+                            <button class="purchase-btn" href="blonde-frontal-wig.html">
+                                Purchase now
+                            </button>
+                        </a>
                     </div>
                     <div class="share-container">
                         <div class="share">
@@ -443,6 +448,37 @@
                         </div>
                         <p class="full-details">View full details</p>
                     </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- ADD TO CART SECTION POPUP -->
+
+        <div class="section-4-popup-container">
+            <div class="section-popup-container-child">
+                <div class="added-items">
+                    <p><img src="images/Vector 8.svg" alt="">One (1) item added to the cart</p>
+                </div>
+                <div class="selected-item">
+                    <img src="images/Rectangle 58.png" alt="">
+                    <div class="selected-item-texts">
+                        <h3>Luxury Bone Straight</h3>
+                        <p>
+                           Size:<bold>22</bold>
+                        </p>
+                        <p>
+                          Color:<bold>Black</bold>
+                        </p>
+                        <p>
+                          Quantity:<bold>1</bold>
+                        </p>
+                    </div>
+                
+                </div>
+                <div class="selected-items-btns">
+                    <button class="items-btns1">View my Cart (1)</button>
+                    <button class="items-btns2">Checkout</button>
+                    <p class="item-link" onclick="hidePopup()">Continue Shopping</p>
                 </div>
             </div>
         </div>
