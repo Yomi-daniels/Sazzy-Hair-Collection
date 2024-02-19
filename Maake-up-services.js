@@ -51,7 +51,8 @@ document.querySelectorAll(".gallery-images .item").forEach(item =>{
                 preview.classList.add('active')
              }
         });
-    };
+
+           };
 });
  
 
