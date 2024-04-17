@@ -13,6 +13,26 @@ body{
     scroll-behavior: smooth;
 
 }
+@media only screen and (max-width:480px){
+    html,body{
+        width: 100%;
+        min-height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+}
+
+@media only screen and (max-width:800px){
+    html,body{
+        width: 100%;
+        min-height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+}
+
 
 
 :root{
@@ -88,7 +108,8 @@ a{
     justify-content: center;
     margin-inline: auto;
     padding: 4rem 0;
-    max-width: 1330px;
+    max-width: 1300px;
+
 }
 
 .logo-nav-container{
@@ -3708,7 +3729,7 @@ margin-top: 1rem;
     width:100%;
     margin-top: 3rem;
 
-    height: 100%;
+    min-height: 100%;
     position: relative;
     place-content: center;
 }
@@ -3760,7 +3781,9 @@ margin-top: 1rem;
         align-items: center;
         text-align: center;
     }
+
 }
+
 
 
 
@@ -3770,6 +3793,21 @@ margin-top: 1rem;
     justify-content:space-between;
     /* gap: 10em; */
     margin-top: 2rem;
+    height: 100%;
+}
+
+@media (max-width:500px) {
+    .section-8{
+        height: 100%;
+        /* margin-top: 18rem; */
+    }
+}
+
+@media (max-width:376px) {
+    .section-8{
+        height: 100%;
+        /* margin-top: 44rem; */
+    }
 }
 .gmail-container #email{
     height: 50px;
@@ -3998,6 +4036,7 @@ margin-bottom: 1rem;
 .make-up-services-container{
     margin-top: 2rem;
     max-width: 1380px;
+    height: 100%;
     margin-inline: auto;
     position: relative;
 }
@@ -4009,6 +4048,13 @@ margin-bottom: 1rem;
 }
 
 @media(max-width:889px){
+
+    .make-up-services-container{
+       max-width: 500px;
+        padding: 0;
+        margin: 0;
+      /* overflow-x: hidden;   */
+    }
     .make-up-header{
         margin-top: 5rem;
         padding: 0 1rem;
@@ -4111,8 +4157,8 @@ padding-top: 3rem;
                 position: fixed;
                 top: 0;
                 left: 0;
-                min-height: 100vh;
-                width: 100%;
+               height: 100%;
+               min-width: 100%;
                 background: rgba(0,0,0,.8);
                 display:none;
                 align-items: center;
@@ -4121,7 +4167,7 @@ padding-top: 3rem;
                
             }
 
-
+       
             .preview img{
                 width: 100%;
                 height: 100%;
@@ -4136,7 +4182,6 @@ padding-top: 3rem;
                 position: relative;
                 max-width: 500px;
                 height: 500px;
-                border: 2px solid black;
             }
 
             
@@ -4165,6 +4210,20 @@ padding-top: 3rem;
             color: black;
             font-size: 2.8rem;
             }
+
+            @media(max-width:376px){
+                .gallery-image-preview{
+                    width: 300px;
+                  
+                }
+
+                .gallery-image-preview .preview{
+                    height: 400px;
+
+                }
+            }
+
+          
            
 
             /*  */

@@ -18,7 +18,7 @@
       /* END */
 
 // SECTION 5 CAROUSEL SLIDER
-
+const selectText = document.getElementById('select-text')
 const section5Container = [...document.querySelectorAll('.section-5-container')];
 const prevBtn = [...document.querySelectorAll('#prevBtn')];
 const nextBtn = [...document.querySelectorAll('#nextBtn')];
@@ -29,11 +29,16 @@ section5Container.forEach((item, i) =>{
 
     nextBtn[i].addEventListener('click', () =>{
         item.scrollLeft += containerWidth;
+        selectText.innerHTML = '1/3'
     });
     prevBtn[i].addEventListener('click', () =>{
         item.scrollLeft -= containerWidth;  
+        selectText.innerHTML = '1/2'
     });
 });
+
+
+
 
 
 // ARM BURGER MENU NAV
