@@ -1382,9 +1382,13 @@ padding: 10px 10px;
         display: none;
     }
 
-    .hero-text-container h2{
-        font-size: 1.2rem;
-        color: blue;
+    .hero-text-container h1{
+        font-size: 2.6rem;
+        line-height: 1.2;
+    }
+
+    .hero-text-container p{
+        font-weight: 500;
     }
 }
 
@@ -1800,6 +1804,16 @@ width: 70ch;
       
     }
 
+    .section-2-container{
+        padding:0 1rem ;
+    }
+
+    .section-2-container .img-text-container-sec2 img,
+    .section-2-container .img-text-container-sec3 img{
+        width: 100%;
+        /* border: 1px solid black; */
+
+    }
     /* .section-2-container{
         border: 1px solid black;
     } */
